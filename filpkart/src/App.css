@@ -1,0 +1,41 @@
+.navbar{
+  position: relative;
+}
+.nav{
+  display: flex;
+  gap: 30px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+a{
+  text-decoration: none;
+}
+footer {
+    color: black;
+    text-align: center;
+    padding: 25px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.footer-links a:hover {
+    color: orange;
+}
+
+.copyright {
+    margin-top: 20px;
+    font-size: 14px;
+}
+.container{
+  width: 400px;
+   border: 2px solid gray;
+}
+.cards{
+  display: flex;
+  gap: 10px;
+}
