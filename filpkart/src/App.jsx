@@ -31,7 +31,7 @@ function App() {
    {/* <UseState></UseState> */}
    {/* <ArithemeticOperations></ArithemeticOperations>
    <IncrementAndDecrement></IncrementAndDecrement> */}
-   <div>
+   {/* <div>
     <Navbar></Navbar>
   <div className='cardContainer'>
    <Cards></Cards>
@@ -39,12 +39,10 @@ function App() {
    <Cards></Cards>
    <Cards></Cards>
   </div>
-  </div>
-  </div>
+  </div> */}
+  <ArithemeticOperations></ArithemeticOperations>
   
- /* <div className='lastcard'>
-  <Cards></Cards>
-   </div> */
+  </div>
    
   )
 }
