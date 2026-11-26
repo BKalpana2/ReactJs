@@ -5,8 +5,13 @@ import viteLogo from './assets/vite.svg'
 import './App.css'
 import Header from './Header'
 import Footer from './Footer'
-import Cards from './Cards'
+// import Cards from './Cards'
 import Profile from './Components/Profile'
+import UseState from './Components/UseState'
+import ArithemeticOperations from './Components/ArithemeticOperations'
+import IncrementAndDecrement from './Components/IncrementAndDecrement'
+import Navbar from './DoctorsTemplate/Navbar'
+import Cards from './DoctorsTemplate/Cards'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -22,8 +27,25 @@ function App() {
     <Cards/>
     <Cards/>
    </div> */}
-   <Profile></Profile>
-   </div>
+   {/* <Profile></Profile> */}
+   {/* <UseState></UseState> */}
+   {/* <ArithemeticOperations></ArithemeticOperations>
+   <IncrementAndDecrement></IncrementAndDecrement> */}
+   <div>
+    <Navbar></Navbar>
+  <div className='cardContainer'>
+   <Cards></Cards>
+   <Cards></Cards>
+   <Cards></Cards>
+   <Cards></Cards>
+  </div>
+  </div>
+  </div>
+  
+ /* <div className='lastcard'>
+  <Cards></Cards>
+   </div> */
+   
   )
 }
 

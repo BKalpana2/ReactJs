@@ -39,3 +39,116 @@ footer {
   display: flex;
   gap: 10px;
 }
+
+
+/* doctors */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.navContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: black;
+  padding-top: 20px;
+  padding-bottom: 35px;
+  height: 50px;
+  color: white;
+  width: 100%;
+  z-index: 1000;
+}
+
+.nav {
+  position: absolute;
+  top: 13px;
+  right: 0px;
+  margin-right: 10px;
+}
+
+.btn {
+  padding: 5px 25px;
+  color: white;
+  background-color: black;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+
+.container {
+  position: relative;
+}
+
+/* Individual Card */
+.card {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 20px;
+  border-radius: 10px;
+  min-width: 0;
+}
+
+/* Image and Details */
+.cardInfo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.btn1 {
+  margin: 10px;
+}
+
+/* View Details Button */
+.btn2 {
+  width: 100%;
+  padding: 8px;
+  border: 2px solid black;
+  border-radius: 8px;
+  background-color: rgba(0, 0, 255, 0.85);
+  color: white;
+  text-align: center;
+  margin-top: auto;
+}
+
+/* All Cards Arrangement */
+.cardContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1250px;
+  margin: 100px auto 0;
+  padding: 20px;
+}
+
+/* Fourth Card */
+.card:nth-child(4) {
+  grid-column: 2;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cardContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card:nth-child(4) {
+    grid-column: auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .cardContainer {
+    grid-template-columns: 1fr;
+  }
+}
+
