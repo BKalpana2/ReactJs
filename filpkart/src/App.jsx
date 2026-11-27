@@ -12,6 +12,7 @@ import ArithemeticOperations from './Components/ArithemeticOperations'
 import IncrementAndDecrement from './Components/IncrementAndDecrement'
 import Navbar from './DoctorsTemplate/Navbar'
 import Cards from './DoctorsTemplate/Cards'
+import InformationDashboard from './InformationDashboard'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -40,7 +41,8 @@ function App() {
    <Cards></Cards>
   </div>
   </div> */}
-  <ArithemeticOperations></ArithemeticOperations>
+  {/* <ArithemeticOperations></ArithemeticOperations> */}
+  <InformationDashboard></InformationDashboard>
   
   </div>
    
