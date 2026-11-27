@@ -1,0 +1,72 @@
+
+ /* .containerNav {
+    position: relative;
+    margin-top: 0px;
+    display: flex; 
+} */
+.containerNav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: rgba(255, 255, 255, 0.689);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+.navLinks {
+    display: inline-flex;
+    gap: 40px;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    position: relative;
+    padding-bottom: 8px;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+.link::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: black;
+    border-radius: 30px;
+    bottom: 0;
+    left: 0;
+
+}
+
+.link:hover::after {
+    width: 100%;
+}
+
+.img {
+    margin-right: 100px;
+    width: 120px;
+    margin-left: 40px;
+    margin-top: 15px;
+}
+
+.btnDownload{
+   position: absolute;
+   top: 25px;
+   right: 65px; 
+   font-size: 15px;
+   padding-top:10px;
+   padding-bottom:10px;
+   padding-left: 20px;
+   padding-right: 20px;
+   border: 1px solid black;
+   border-radius: 19px 19px 0px 19px;
+   color: white;
+   background-color: black;
+   font-size: 18px;
+}
